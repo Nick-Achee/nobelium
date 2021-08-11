@@ -88,7 +88,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="192x192" href="/apple-touch-icon.png"></link>
           <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed"></link>
-          {BLOG.appearance === 'auto'
+          {BLOG.appearance === 'light'
             ? (
             <>
             <meta name="theme-color" content={BLOG.lightBackground} media="(prefers-color-scheme: light)"/>
@@ -96,7 +96,7 @@ class MyDocument extends Document {
             </>
               )
             : (
-            <meta name="theme-color" content={BLOG.appearance === 'dark' ? BLOG.darkBackground : BLOG.lightBackground} />
+            <meta name="theme-color" content={BLOG.appearance === 'light' ? BLOG.darkBackground : BLOG.lightBackground} />
               )
           }
         </Head>
