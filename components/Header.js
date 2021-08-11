@@ -2,14 +2,15 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useLocale } from '@/lib/locale'
-import Lgo from './Lgo'
+import Lgo from "../public/Lgo.svg"
+
 
 const NavBar = () => {
   const locale = useLocale()
   const links = [
     { id: 0, name: locale.NAV.INDEX, to: BLOG.path || '/', show: true },
     { id: 1, name: locale.NAV.ABOUT, to: '/about', show: BLOG.showAbout },
-    { id: 2, name: locale.NAV.RSS, to: '/feed', show: true },
+    { id: 2, name: locale.NAV.RSS, to: '/playground', show: true },
     { id: 3, name: locale.NAV.SEARCH, to: '/search', show: false }
   ]
   return (
@@ -70,7 +71,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link href="/">
             <a>
               <div className="h-6">
-               <Lgo />
+               <img src="/Lgo.svg" width="200" height="100"/>
               </div>
             </a>
           </Link>
