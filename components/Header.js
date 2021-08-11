@@ -70,7 +70,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link href="/">
             <a>
               <div className="h-6">
-               <Lgo  />
+               <Lgo />
               </div>
             </a>
           </Link>
