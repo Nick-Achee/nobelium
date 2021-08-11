@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useLocale } from '@/lib/locale'
-import Lgo from "../public/Lgo.svg"
 
 
 const NavBar = () => {
