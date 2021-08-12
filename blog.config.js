@@ -1,7 +1,7 @@
 const BLOG = {
   title: 'Sawyer Sells Cars',
   author: 'Sawyer Walls',
-  email: 'nicholas.achee103@gmail.com',
+  email: 'sawyerwalls93@gmail.com',
   link: 'https://sawyersellscars.com',
   description: 'Sawyer Sells Cars.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
